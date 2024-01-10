@@ -9,6 +9,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f5f5f5;
         }
 
         header {
@@ -16,6 +17,7 @@
             color: #fff;
             text-align: center;
             padding: 30px 0;
+            position: relative;
         }
 
         .profile-image img {
@@ -23,13 +25,7 @@
             width: 150px;
             height: 150px;
             object-fit: cover;
-        }
-
-        .contact,
-        .skills,
-        .portfolio,
-        .resume {
-            margin: 20px;
+            border: 4px solid #fff;
         }
 
         h1, h2 {
@@ -37,17 +33,51 @@
             padding-bottom: 5px;
         }
 
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        .contact p, .skills ul, .portfolio, .resume p {
+            font-size: 16px;
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
 
         li {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
 
         .project {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .profile-image img {
+                width: 120px;
+                height: 120px;
+            }
+
+            nav a {
+                font-size: 16px;
+            }
         }
     </style>
     <title>Your Name - Portfolio</title>
@@ -61,24 +91,33 @@
         <h1>Your Name</h1>
     </header>
 
-    <section class="contact">
+    <nav>
+        <a href="#contact">Contact</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#resume">Resume</a>
+    </nav>
+
+    <section id="contact" class="contact">
         <h2>Contact Information</h2>
         <p>Email: your.email@example.com</p>
         <p>LinkedIn: linkedin.com/in/yourname</p>
         <p>GitHub: github.com/yourusername</p>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
         <h2>Skills</h2>
         <ul>
             <li>HTML5</li>
             <li>CSS3</li>
             <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
             <!-- Add more skills as needed -->
         </ul>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <h2>Portfolio</h2>
         <!-- Add your projects with links and descriptions -->
         <div class="project">
@@ -92,7 +131,7 @@
         <!-- Add more projects as needed -->
     </section>
 
-    <section class="resume">
+    <section id="resume" class="resume">
         <h2>Resume</h2>
         <!-- Add your resume content -->
         <p>Education: Your University, Degree in Computer Science (Year)</p>
