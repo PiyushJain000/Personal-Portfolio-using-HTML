@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .profile-image img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .contact,
+        .skills,
+        .portfolio,
+        .resume {
+            margin: 20px;
+        }
+
+        h1, h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+    </style>
     <title>Your Name - Portfolio</title>
 </head>
+
 <body>
     <header>
         <div class="profile-image">
             <img src="your-image.jpg" alt="Your Name">
         </div>
         <h1>Your Name</h1>
-        <p>Web Developer</p>
     </header>
 
     <section class="contact">
@@ -32,22 +78,27 @@
         </ul>
     </section>
 
-    <section class="projects">
-        <h2>Projects</h2>
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <!-- Add your projects with links and descriptions -->
         <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
+            <h3>Project Title 1</h3>
+            <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
+            <h3>Project Title 2</h3>
+            <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <!-- Add more projects as needed -->
     </section>
 
     <section class="resume">
         <h2>Resume</h2>
-        <p>Download my resume <a href="your-resume.pdf" target="_blank">here</a>.</p>
+        <!-- Add your resume content -->
+        <p>Education: Your University, Degree in Computer Science (Year)</p>
+        <p>Work Experience: Company Name, Position (Year-Year)</p>
+        <!-- Add more resume details as needed -->
     </section>
 </body>
+
 </html>
